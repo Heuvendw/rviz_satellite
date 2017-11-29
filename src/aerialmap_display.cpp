@@ -117,7 +117,7 @@ AerialMapDisplay::AerialMapDisplay()
 
   //  properties for map
   object_uri_property_ = new StringProperty(
-      "Object URI", "http://otile1.mqcdn.com/tiles/1.0.0/sat/{z}/{x}/{y}.jpg",
+      "Object URI", "http://tile.openstreetmap.org/{z}/{x}/{y}.png",
       "URL from which to retrieve map tiles.", this, SLOT(updateObjectURI()));
   object_uri_property_->setShouldBeSaved(true);
   object_uri_ = object_uri_property_->getStdString();
